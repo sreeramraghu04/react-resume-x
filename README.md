@@ -1,12 +1,27 @@
-# React + Vite
+# Resume Builder 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Resume Builder** is a modern frontend web application that helps users create professional resumes easily and quickly. Users can input their details, preview the resume, and download it — all without a backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- **Interactive Resume Builder**: Fill in your personal, education, and experience details.
+- **Preview in Real-Time**: See how your resume looks as you type.
+- **Download Resume**: Export your resume as a PDF directly from the browser.
+- **Multiple Templates**: Choose from clean and professional resume templates.
+- **Responsive Design**: Works smoothly on desktop, tablet, and mobile.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Framework/Library:** React.js
+- **Styling:** Tailwind CSS
+
+---
+
+## Demo Link
+
+[Live Demo](https://r-react-resume-builder.netlify.app/)
