@@ -39,7 +39,7 @@ const Stepper = ({ currentStep, setCurrentStep }) => {
 
             {/* Progress line */}
             {index < steps.length - 1 && (
-              <div className="flex-1 h-1 mx-1 relative">
+              <div className="flex-1 h-1 mx-2 relative">
                 <div className="absolute top-0 left-0 h-1 w-full bg-gray-300 rounded"></div>
                 <div
                   className={`absolute top-0 left-0 h-1 rounded transition-all duration-500 ${
