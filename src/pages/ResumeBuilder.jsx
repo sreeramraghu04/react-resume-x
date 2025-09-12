@@ -39,22 +39,24 @@ const ResumeBuilder = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-4 sm:p-6 max-w-6xl mx-auto">
       {/* Progress bar */}
-      <Stepper currentStep={currentStep} setCurrentStep={setCurrentStep} />
+      <div className="overflow-x-auto">
+        <Stepper currentStep={currentStep} setCurrentStep={setCurrentStep} />
+      </div>
 
       {/* Step Content */}
-      <div className="bg-gradient-to-br from-blue-100 to-indigo-50 p-6 rounded-xl shadow-md">
+      <div className="mt-4 bg-gradient-to-br from-blue-100 to-indigo-50 p-4 sm:p-6 rounded-xl shadow-md">
         {renderStep()}
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-between mt-6">
+      <div className="flex flex-col sm:flex-row justify-between gap-3 mt-6">
         {/* Back button only after step 1 */}
         {currentStep > 1 && (
           <button
             onClick={() => setCurrentStep((prev) => prev - 1)}
-            className="px-4 py-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700"
+            className="w-full sm:w-auto px-4 py-2 rounded-lg bg-gray-600 text-white hover:bg-gray-700"
           >
             Back
           </button>
@@ -64,8 +66,8 @@ const ResumeBuilder = () => {
         {currentStep < steps.length && (
           <button
             onClick={() => setCurrentStep((prev) => prev + 1)}
-            className={`px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 ${
-              currentStep === 1 ? "ml-auto" : ""
+            className={`w-full sm:w-auto px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 ${
+              currentStep === 1 ? "sm:ml-auto" : ""
             }`}
           >
             Next
@@ -80,7 +82,7 @@ const ResumeBuilder = () => {
                 .getElementById("resume-preview-section")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
-            className="ml-auto px-4 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700"
+            className="w-full sm:w-auto sm:ml-auto px-4 py-2 rounded-lg bg-red-600 text-white hover:bg-red-700"
           >
             Finish
           </button>

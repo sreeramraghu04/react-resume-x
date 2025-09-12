@@ -15,7 +15,7 @@ const Stepper = ({ currentStep, setCurrentStep }) => {
             className="flex-1 flex items-center cursor-pointer"
           >
             {/* Step circle + title */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mt-2">
               <div
                 className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold transition-all duration-300 
                 ${

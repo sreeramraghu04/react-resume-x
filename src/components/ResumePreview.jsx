@@ -23,9 +23,8 @@ const ResumePreview = forwardRef((props, ref) => {
       SelectedTemplate = ModernTemplate;
   }
 
-  // resume content wrapped in ref for printing
   return (
-    <div ref={ref} className="p-6">
+    <div ref={ref} className="">
       <SelectedTemplate data={resumeData} />
     </div>
   );
