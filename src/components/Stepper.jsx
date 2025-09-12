@@ -3,7 +3,7 @@ import { steps } from "./steps/steps";
 
 const Stepper = ({ currentStep, setCurrentStep }) => {
   return (
-    <div className="flex items-center justify-between mb-5 p-1">
+    <div className="flex items-center justify-between mb-5">
       {steps.map((step, index) => {
         const isActive = currentStep === step.id;
         const isCompleted = currentStep > step.id;
