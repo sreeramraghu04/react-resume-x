@@ -12,7 +12,7 @@ const Stepper = ({ currentStep, setCurrentStep }) => {
           <div
             key={step.id}
             onClick={() => setCurrentStep(step.id)}
-            className="flex-1 flex items-center cursor-pointer"
+            className="flex-1 flex items-center cursor-pointer lg:pl-18"
           >
             {/* Step circle + title */}
             <div className="flex flex-col items-center mt-2">
