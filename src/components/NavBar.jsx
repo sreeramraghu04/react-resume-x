@@ -19,7 +19,7 @@ const Navbar = () => {
           {/* Logo */}
           <NavLink
             to="/"
-            className="text-2xl font-bold text-blue-600 dark:text-blue-400"
+            className="px-2 text-2xl font-bold text-blue-600 dark:text-blue-400"
           >
             Resume Builder
           </NavLink>
@@ -38,13 +38,13 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu */}
-          <div className="md:hidden">
+          <div className="md:hidden px-2">
             <button
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle Menu"
               className="focus:outline-none"
             >
-              {isOpen ? <X size={30} /> : <Menu size={30} />}
+              {isOpen ? <X size={35} /> : <Menu size={30} />}
             </button>
           </div>
         </div>
