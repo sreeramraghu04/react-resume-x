@@ -17,7 +17,7 @@ const Stepper = ({ currentStep, setCurrentStep }) => {
             {/* Step circle + title */}
             <div className="flex flex-col items-center mt-2">
               <div
-                className={`w-10 h-10 flex items-center justify-center rounded-full text-sm font-bold transition-all duration-300 
+                className={`w-10 h-10 flex items-center justify-center rounded-full lg:text-sm text-xs font-bold transition-all duration-300 
                 ${
                   isActive
                     ? "bg-blue-600 text-white scale-110 shadow-md"
@@ -39,7 +39,7 @@ const Stepper = ({ currentStep, setCurrentStep }) => {
 
             {/* Progress line */}
             {index < steps.length - 1 && (
-              <div className="flex-1 h-1 mx-2 relative">
+              <div className="flex-1 h-1 mx-1 relative">
                 <div className="absolute top-0 left-0 h-1 w-full bg-gray-300 rounded"></div>
                 <div
                   className={`absolute top-0 left-0 h-1 rounded transition-all duration-500 ${
