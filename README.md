@@ -24,4 +24,4 @@
 
 ## Demo Link
 
-[Live Demo](https://r-react-resume-builder.netlify.app/)
+[Live Demo](https://ram-react-resume-builder.netlify.app/)
