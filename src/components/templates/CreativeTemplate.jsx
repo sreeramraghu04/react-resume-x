@@ -74,7 +74,7 @@ const CreativeTemplate = ({ data }) => {
             {resume.skills.map((s, i) => (
               <span
                 key={i}
-                className="px-3 py-1 bg-purple-200 text-purple-900 rounded-full text-sm"
+                className="px-3 py-3 bg-purple-200 text-purple-900 rounded-full text-sm"
               >
                 {s}
               </span>

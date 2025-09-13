@@ -25,14 +25,14 @@ const ClassicTemplate = ({ data }) => {
 
       {resume.summary && (
         <section className="mb-6">
-          <h2 className="text-lg font-bold uppercase border-b mb-2">Profile</h2>
+          <h2 className="text-lg font-bold uppercase mb-2">Profile</h2>
           <p>{resume.summary}</p>
         </section>
       )}
 
       {resume.education.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-lg font-bold uppercase border-b mb-2">
+          <h2 className="text-lg font-bold uppercase mb-2">
             Education
           </h2>
           {resume.education.map((edu, idx) => (
@@ -46,7 +46,7 @@ const ClassicTemplate = ({ data }) => {
 
       {resume.experience.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-lg font-bold uppercase border-b mb-2">
+          <h2 className="text-lg font-bold uppercase mb-2">
             Experience
           </h2>
           {resume.experience.map((exp, idx) => (
@@ -68,14 +68,14 @@ const ClassicTemplate = ({ data }) => {
 
       {resume.skills.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-lg font-bold uppercase border-b mb-2">Skills</h2>
+          <h2 className="text-lg font-bold uppercase mb-2">Skills</h2>
           <p>{resume.skills.join(", ")}</p>
         </section>
       )}
 
       {resume.projects.length > 0 && (
         <section>
-          <h2 className="text-lg font-bold uppercase border-b mb-2">
+          <h2 className="text-lg font-bold uppercase mb-2">
             Projects
           </h2>
           {resume.projects.map((proj, idx) => (

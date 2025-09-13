@@ -39,7 +39,7 @@ const MinimalistTemplate = ({ data }) => {
           <h2 className="font-semibold">Experience</h2>
           {resume.experience.map((exp, idx) => (
             <div key={idx}>
-              <p className="font-medium">
+              <p className="">
                 {exp.role} @ {exp.company} ({exp.duration})
               </p>
             </div>

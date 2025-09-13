@@ -29,14 +29,14 @@ const ModernTemplate = ({ data }) => {
 
       {/* Summary */}
       <section className="mb-6">
-        <h2 className="text-xl font-semibold border-b pb-1 mb-2">Summary</h2>
+        <h2 className="text-xl font-semibold pb-1 mb-2">Summary</h2>
         <p className="text-gray-800">{resume.summary}</p>
       </section>
 
       {/* Education */}
       {resume.education.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-xl font-semibold border-b pb-1 mb-2">
+          <h2 className="text-xl font-semibold pb-1 mb-2">
             Education
           </h2>
           {resume.education.map((edu, idx) => (
@@ -53,7 +53,7 @@ const ModernTemplate = ({ data }) => {
       {/* Experience */}
       {resume.experience.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-xl font-semibold border-b pb-1 mb-2">
+          <h2 className="text-xl font-semibold pb-1 mb-2">
             Experience
           </h2>
           {resume.experience.map((exp, idx) => (
@@ -77,12 +77,12 @@ const ModernTemplate = ({ data }) => {
       {/* Skills */}
       {resume.skills.length > 0 && (
         <section className="mb-6">
-          <h2 className="text-xl font-semibold border-b pb-1 mb-2">Skills</h2>
+          <h2 className="text-xl font-semibold pb-1 mb-2">Skills</h2>
           <div className="flex flex-wrap gap-2">
             {resume.skills.map((skill, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1 text-sm bg-gray-200 rounded-full"
+                className="px-3 py-3 text-sm bg-gray-200 rounded-full"
               >
                 {skill}
               </span>
@@ -94,7 +94,7 @@ const ModernTemplate = ({ data }) => {
       {/* Projects */}
       {resume.projects.length > 0 && (
         <section>
-          <h2 className="text-xl font-semibold border-b pb-1 mb-2">Projects</h2>
+          <h2 className="text-xl font-semibold pb-1 mb-2">Projects</h2>
           {resume.projects.map((proj, idx) => (
             <div key={idx} className="mb-2">
               <p className="font-medium">{proj.name}</p>

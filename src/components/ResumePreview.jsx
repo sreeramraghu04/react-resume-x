@@ -1,4 +1,4 @@
-import React, { useContext, forwardRef } from "react";
+import React, { useContext, forwardRef } from "react"; 
 import { ResumeContext } from "../context/ResumeContext";
 import ModernTemplate from "./templates/ModernTemplate";
 import ClassicTemplate from "./templates/ClassicTemplate";
@@ -24,8 +24,22 @@ const ResumePreview = forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={ref} className="">
-      <SelectedTemplate data={resumeData} />
+    <div className="flex justify-center w-full overflow-auto p-2 sm:p-4">
+      {/* Responsive container */}
+      <div
+        ref={ref}
+        className="
+          bg-white shadow-lg
+          w-full max-w-[800px]  /* responsive width for screens */
+          min-h-[80vh] md:min-h-[90vh]
+          p-4 sm:p-6 md:p-8
+          box-border
+          rounded-lg
+          print:w-[210mm] print:min-h-[297mm] print:p-[20mm]  /* A4 for PDF */
+        "
+      >
+        <SelectedTemplate data={resumeData} />
+      </div>
     </div>
   );
 });
