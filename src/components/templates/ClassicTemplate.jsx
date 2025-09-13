@@ -17,8 +17,8 @@ const ClassicTemplate = ({ data }) => {
     <div className="p-10 bg-white text-black font-serif border border-gray-400">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-bold">{resume.name}</h1>
-        <p className="text-lg">{resume.title}</p>
-        <p className="text-sm text-gray-600">
+        <p className="text-md">{resume.title}</p>
+        <p className="text-xs text-gray-600">
           {resume.email} | {resume.phone}
         </p>
       </header>
