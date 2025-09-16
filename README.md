@@ -1,6 +1,6 @@
-# Resume Builder 🎯
+# ResumeX 🎯
 
-**Resume Builder** is a modern frontend web application that helps users create professional resumes easily and quickly. Users can input their details, preview the resume, and download it — all without a backend.
+**ResumeX** is a modern frontend web application that helps users create professional resumes easily and quickly. Users can input their details, preview the resume, and download it — all without a backend.
 
 ---
 

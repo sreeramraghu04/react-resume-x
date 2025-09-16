@@ -21,7 +21,7 @@ const Navbar = () => {
             to="/"
             className="px-2 text-2xl font-bold text-blue-600 dark:text-blue-400"
           >
-            Resume Builder
+            ResumeX
           </NavLink>
 
           {/* Desktop Menu */}
@@ -68,7 +68,7 @@ const Navbar = () => {
           className={navLinkClasses}
           onClick={() => setIsOpen(false)}
         >
-          Resume Builder
+          Build a Resume?
         </NavLink>
         <NavLink
           to="/about"
