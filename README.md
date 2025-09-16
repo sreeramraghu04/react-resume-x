@@ -24,4 +24,4 @@
 
 ## Demo Link
 
-[Live Demo](https://ram-react-resume-x.netlify.app/)
+[Live Demo](https://resume-x.sreeramraghu.online/)
