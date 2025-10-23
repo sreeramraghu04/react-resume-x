@@ -47,7 +47,7 @@ const About = () => {
         <div className="mt-8 md:mt-10 pt-6 border-t border-gray-100">
           <p className="text-gray-600 text-sm md:text-base">
             Ready to create your resume?{" "}
-            <Link>
+            <Link
               to="/resumebuilder"
               className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
             >
